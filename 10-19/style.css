@@ -8,3 +8,65 @@ p {
     text-decoration: underline;
     background-color: purple;
 }
+
+
+
+
+
+/* Everything */
+* {
+    transition: all 2s;
+}
+
+
+
+
+
+.square { 
+    margin: 200px;
+    height:300px;
+    width: 300px;
+    background:blue;
+    animation: doFunkyDance 5s 3 forwards;
+}
+
+.diamond{ 
+    transform: rotate(945deg)
+}
+
+/*Psuedo Class*/
+.square:hover { 
+    background:red;
+}
+
+/*When clicking*/
+.square:active{ 
+    height:50px;
+    width: 50px;
+}
+
+
+@keyframes doFunkyDance {
+    0%{ 
+        background:orange;
+        width: 20px;
+    }
+    50% {
+        transform: rotate(157deg);
+        width: 300px;
+        background: purple;
+
+    }   
+    74%{
+        opacity: .2;
+        transform:skew(100deg);
+        background: green;
+        margin-left:200px;
+    }
+    100%{
+        background: teal;
+        margin-top: 100px;
+                
+    }
+}
+
