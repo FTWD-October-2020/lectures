@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: peachpuff;
+    }
+</style>
+
+<body>
+    <h1>Welcome To JS</h1>
+</body>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+    let string = 'Nice job Michael'
+    let number = 5
+
+    //key : value 
+
+
+    //List
+    let arr = [
+        'dog', 'cat', 'peacock', 'gorrila',
+    ]
+
+    arr.push('cow') //Adds to the end of array 
+    arr.unshift('dolphin') //Adds to the beginning of an array 
+
+    //arr.shift() //Take off the beginning 
+    //arr.pop() //Take off the end 
+    //arr[2] = 'PEACOCK?'
+    //arr.splice(1, 2, 'PEACOCK!!!', 'cool')
+    //console.log(arr)
+
+
+    for (let i = 0; i < arr.length; i++) {
+        //console.log(i)//0,1,2,3,4
+        //console.log(arr[i])
+    }
+
+    for (let animal of arr) {
+        //console.log(animal)
+    }
+
+    // let j = 0;
+
+    // while (j < arr.length) {
+    //     console.log(arr[j])
+    //     j++;
+    // }
+
+
+
+
+
+    let obj = {
+        language: 'Javascript',
+        weather: 'Cloudy'
+    }
+    // console.log(obj)
+
+    obj.weather = "Sunny"
+
+
+
+    obj.favoriteColor = 'cyan'
+
+    obj.color = 'cyan'
+    delete obj.favoriteColor
+
+    obj[`favoriteFoods`] = ['Pizza']
+
+    obj[`favoriteFoods`].push('Sushi')
+
+    obj.skills = {
+
+    }
+
+    obj.skills.javascript = true
+
+    for (let key in obj) {
+        //console.log(key, obj[key])
+    }
+
+    // console.log(obj)
+
+
+
+    //console.log(obj.language) //dot notation
+    //console.log(obj['language']) //bracket notation
+
+
+
+    // console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
+
+
+    function rats(color) {
+        console.log("%cGO RATS!", "color: " + color)
+    }
+
+
+    // rats('magenta')
+
+
+
+
+    function multiply(num, num2) { //Parameter or an argument
+        return num * num2
+    }
+
+
+
+    let x = multiply(3, 4) //12
+    let y = multiply(10, 20) //200
+
+
+    console.log(x, ' this value has been set from the return')
+    console.log(y, ' this value has been set from the return')
+
+    console.log(x + y)
+
+
+
+
+    // const modernRats = modernColor => {
+    //     console.log(`%cMODERN RATS`, `color: ${modernColor}`)
+    // }
+
+
+
+    // modernRats('blue')
+
+    //ES6+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
