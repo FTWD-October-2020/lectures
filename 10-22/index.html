@@ -8,14 +8,62 @@
     <title>Document</title>
 </head>
 
+<style>
+    .food {
+        border: 1px solid #ddd;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .myCheese {
+        /* animation: spin 1s infinite; */
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
 <body>
     <h2>Welcome to DOM manip</h2>
 
-    <button>Apple</button>
-    <button>Pear</button>
+
+    <section>
+        <div id="vegetable">Pick a Vegetable</div>
+
+        <div class="food">
+            <h2>Asparagus</h2>
+            <button>Add Food</button>
+        </div>
+
+        <div class="food">
+            <h2>Brocolli</h2>
+            <button>Add Food</button>
+        </div>
+        <div class="food">
+            <h2>Lettuce</h2>
+            <button>Add Food</button>
+        </div>
+        <div class="food">
+            <h2>Bok Choy</h2>
+            <button>Add Food</button>
+        </div>
+        <div class="food">
+            <h2>Carrots</h2>
+            <button>Add Food</button>
+        </div>
+    </section>
+
+
+    <!-- <button>Pear</button>
     <button>Orange</button>
     <button>Tomato</button>
-    <button>Kiwi</button>
+    <button>Kiwi</button> -->
 
     <br>
     <br>
@@ -24,7 +72,6 @@
     <br>
     <br>
 
-    <div id="fruit">Pick a fruit</div>
 
 
 
