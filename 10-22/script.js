@@ -63,23 +63,27 @@ console.log("HELLO WORLD!!")
 
 
 
-//Got all buttons
-let buttons = document.querySelectorAll('button')
+// //Got all buttons
+// let buttons = document.querySelectorAll('button')
 
-for (let button of buttons) {
-    //Added event listener to each button
-    button.onclick = function (event) {
-        //When to parent and then down to h2 tag where veggie name was 
-        let veg = this.parentElement.querySelector('h2').innerText
-        console.log(veg)
-        //Added the text and the cheese to div 
-        document.querySelector("#vegetable").innerText = veg
-        document.querySelector("#vegetable").innerHTML += `
-            <div class="myCheese">
-                <img src="cheese.jpg"/>
-            </div>
-        `
-    }
-}
+// for (let button of buttons) {
+//     //Added event listener to each button
+//     button.onclick = function (event) {
+//         //When to parent and then down to h2 tag where veggie name was 
+//         let veg = this.parentElement.querySelector('h2').innerText
+//         console.log(veg)
+//         //Added the text and the cheese to div 
+//         document.querySelector("#vegetable").innerText = veg
+//         document.querySelector("#vegetable").innerHTML += `
+//             <div class="myCheese">
+//                 <img src="cheese.jpg"/>
+//             </div>
+//         `
+//     }
+// }
+
+
+
+
 
 
